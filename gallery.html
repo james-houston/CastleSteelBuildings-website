@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Gallery</title>
+   <style>
+/* Additional styles specific to the gallery page */
+.gallery-container {
+   display: flex;
+   flex-direction: column; /* Stack items vertically */
+   gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.gallery-item-link:hover {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Add a box shadow on hover */
+   background-color: rgb(255, 200, 0); /* Change background color on hover */
+}
+
+.gallery-item {
+   width: 100%; /* Take up 100% of the width */
+   box-sizing: border-box;
+   background-color: #333;
+   padding: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: row; /* Place inner elements side-by-side */
+   transition: box-shadow 0.3s ease; /* Smooth transition for the box shadow */
+}
+
+.gallery-item .description {
+   flex: 1; /* Take up remaining horizontal space */
+   color: inherit; /* Inherit text color from parent */
+}
+
+.gallery-item .description a {
+   color: inherit; /* Inherit link color from parent */
+   text-decoration: inherit; /* Inherit link text-decoration from parent */
+}
+
+.gallery-item img {
+   max-width: 100%;
+   height: auto;
+   margin: 10px 10px 10px;
+}
+
+.gallery-item-link {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   height: auto;
+   text-decoration: none;
+   color: inherit;
+}
+
+   </style>
+</head>
+<body>
+
+   <!-- Header Section -->
+   <header>
+        <a href="index.html">
+            <img src="images/csb-logo.svg" alt="Your Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="gallery.html">Product Gallery</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+   </header>
+   <br>
+
+   <!-- Main Content Section -->
+   <section class="main-content">
+      <h2>Gallery - Click on the images to see more examples!</h2>
+        <br>
+      <!-- Gallery Container -->
+      <div class="gallery-container">
+
+         <!-- Gallery Item 1 - canopy  -->
+         <div class="gallery-item">
+             <div class="description">
+                 <h3>Canopies</h3>
+                 <p>Single sloped canopies provide a durable, cost-effective means of sheltering people, equipment, inventory, animals, and other posessions from the elements. Ranging from protecting corps and feed such as hay, to providing sun and rain shade to a picnic shelter, these open-air facilities stand the tests of time.</p>
+                </div>
+                <a href="galleries/canopy-gallery.html" class="gallery-item-link">
+                    <img src="images/canopy-index.jpg" alt="Canopy">
+                </a>
+            </div>
+
+         <!-- Gallery Item 2 - gable JAMESNOTE -->
+         <div class="gallery-item">
+            <div class="description">
+                <h3>Gable Buildings</h3>
+                <p>Gable Buildings are frequently used for commercial, residential, and agricultural purposes. Uses include office space, workshops, storage, hobby shop, chemical storage, equipment housing, production facility, warehousing, and many more. They are cost-effective and attractive all settings.</p>
+            </div>
+            <a href="galleries/gable-gallery.html" class="gallery-item-link">
+                <img src="images/gable-index.jpg" alt="Gable Buildings">
+            </a>
+        </div>
+
+        <!-- Gallery Item 3 - gambral JAMESNOTE -->
+        <div class="gallery-item">
+            <div class="description">
+                <h3>Gambral Buildings</h3>
+                <p>By combining it's classic 'Dutch' styling with steel materials, CSB's Gambral buildings are durable, attactive, and functional. With a traditional farm look, these buildings provide significant storage volume for the square foot.</p>
+            </div>
+            <a href="galleries/gambral-gallery.html" class="gallery-item-link">
+                <img src="images/gambral-index.jpg" alt="Gambral Building">
+            </a>
+        </div>
+
+        <!-- Gallery Item 4 - lean-to JAMESNOTE -->
+        <div class="gallery-item">
+            <div class="description">
+                <h3>Lean-To</h3>
+                <p>New buildings or existing buildings, we can add on to increase coverage and add more usable space to your building.</p>
+            </div>
+            <a href="galleries/lean-to.html" class="gallery-item-link">
+                <img src="images/lean-to-index.jpg" alt="Lean-to">
+            </a>
+        </div>
+
+        <!-- Gallery Item 5 - custom JAMESNOTE -->
+        <div class="gallery-item">
+            <div class="description">
+                <h3>Custom Buldings</h3>
+                <p>All the big steel building providers provide standardized buildings with no options for customization. At Castle Steel Buildings we can create new solutions for your building to let you improve something existing or create something completely new!</p>
+            </div>
+            <a href="galleries/custom.html" class="gallery-item-link">
+                <img src="images/custom-index.jpg" alt="Custom Building">
+            </a>
+        </div>
+
+        <!-- Gallery Item 6 - raised roof JAMESNOTE -->
+        <div class="gallery-item">
+            <div class="description">
+                <h3>Raised Roof Buildings</h3>
+                <p>Raised Roof Buildings are commonly used for residential and agricultural storage. They are attractive additions in almost every setting.</p>
+            </div>
+            <a href="galleries/raised-roof.html" class="gallery-item-link">
+                <img src="images/raised-roof-index.jpg" alt="Raised roof building">
+            </a>
+        </div>
+
+      </div>
+   </section>
+
+   <!-- Footer Section -->
+   <footer>
+      <p>&copy; 2023 Castle Steel Buildings. All rights reserved.</p>
+   </footer>
+
+</body>
+</html>
